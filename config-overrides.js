@@ -6,6 +6,7 @@ module.exports = override(
     style: 'css',
   }),
   addWebpackAlias({//主要是把文件目录配置下，不用再require导入
-    assets:path.resolve(__dirname,".src/assets")
+    assets:path.resolve(__dirname,"./src/assets"),
+    "@":path.resolve(__dirname,"./src/components")
   })
 );

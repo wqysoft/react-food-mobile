@@ -1,18 +1,14 @@
 import { TabBar } from 'antd-mobile';
 import React,{ Component } from "react";
 import Cookbook from "../cookbook/Cookbook"
-// import cookbook from "assets/cookbook.jpg"
-// import cookbookActive from "assets/cookbook-active.jpg"
-// import location from "assets/location.jpg"
-// import locationActive from "assets/location-active.jpg"
-// import menu from "assets/menu.jpg"
-// import menuActive from "assets/menuActive.jpg"
-// import more from "assets/more.jpg"
-// import moreActive from "assets/moreActive.jpg"
-// import search from "assets/search.jpg"
-// import swiper1 from "assets/swiper-1.jpg"
-// import swiper2 from "assets/swiper-2.jpg"
-// import swiper3 from "assets/swiper-3.jpg"
+import cookbook from "assets/cookbook.png"
+import cookbookActive from "assets/cookbook-active.png"
+import location from "assets/location.png"
+import locationActive from "assets/location-active.png"
+import menu from "assets/menu.png"
+import menuActive from "assets/menu-active.png"
+import more from "assets/more.png"
+import moreActive from "assets/more-active.png"
 
 export default class Layout extends Component {
   constructor(props) {
@@ -67,13 +63,13 @@ export default class Layout extends Component {
             icon={<div style={{
               width: '22px',
               height: '22px',
-              background: 'url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  21px 21px no-repeat' }}
+              background: `url(${cookbook}) center center /  21px 21px no-repeat` }}
             />
             }
             selectedIcon={<div style={{
               width: '22px',
               height: '22px',
-              background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat' }}
+              background: `url(${cookbookActive}) center center /  21px 21px no-repeat` }}
             />
             }
             selected={this.state.selectedTab === 'cookbook'}
@@ -90,14 +86,14 @@ export default class Layout extends Component {
               <div style={{
                 width: '22px',
                 height: '22px',
-                background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat' }}
+                background: `url(${menu}) center center /  21px 21px no-repeat` }}
               />
             }
             selectedIcon={
               <div style={{
                 width: '22px',
                 height: '22px',
-                background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat' }}
+                background: `url(${menuActive}) center center /  21px 21px no-repeat` }}
               />
             }
             title="分类"
@@ -115,14 +111,14 @@ export default class Layout extends Component {
               <div style={{
                 width: '22px',
                 height: '22px',
-                background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  21px 21px no-repeat' }}
+                background: `url(${location}) center center /  21px 21px no-repeat` }}
               />
             }
             selectedIcon={
               <div style={{
                 width: '22px',
                 height: '22px',
-                background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  21px 21px no-repeat' }}
+                background: `url(${locationActive}) center center /  21px 21px no-repeat` }}
               />
             }
             title="美食地图"
@@ -136,8 +132,8 @@ export default class Layout extends Component {
           >
           </TabBar.Item>
           <TabBar.Item
-            icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
-            selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
+            icon={{ uri: `${more}` }}
+            selectedIcon={{ uri: `${moreActive}` }}
             title="更多"
             key="more"
             selected={this.state.selectedTab === 'more'}
